@@ -20,7 +20,9 @@ Route::get('/dashboard/index',[DashboardController::class,'index' ])
 ->name('dashboard.index');
 //->middleware('auth');
 
-
+Route::get('/test', function () {
+    return view('sana test');
+});
 
 // ------------------------- Add route test start
 Route::get('/test', function () {

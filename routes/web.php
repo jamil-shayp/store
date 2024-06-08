@@ -16,9 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 //composer require laravel/breeze --dev
 // php artisan breeze:install
+
 Route::get('/dashboard/index',[DashboardController::class,'index' ])
 ->name('dashboard.index');
 //->middleware('auth');
+
+Route::get('/dashboard/login',[DashboardController::class,'index']);
 
 Route::get('/test', function () {
     return view('sana test');

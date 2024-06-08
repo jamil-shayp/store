@@ -22,6 +22,12 @@ Route::get('/dashboard/index',[DashboardController::class,'index' ])
 
 
 
+// ------------------------- Add route test start
+Route::get('/test', function () {
+    return 'test route';
+});
+
+// ------------------------- Add route test end
 
 Route::get('/', function () {
     return view('welcome');

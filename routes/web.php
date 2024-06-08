@@ -23,9 +23,13 @@ Route::get('/dashboard/index',[DashboardController::class,'index' ])
 
 Route::get('/dashboard/login',[DashboardController::class,'index']);
 
+// ------------------------- Add Sana's route test start
+
 Route::get('/test', function () {
     return view('sana test');
 });
+
+// ------------------------- Add Sana's route test End
 
 // ------------------------- Add route test start
 Route::get('/test', function () {
@@ -38,9 +42,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// ------------------------- Add Raghad's route test start
 Route::get('/raghadpage', function () {
     return view('raghadpage');
 });
+// ------------------------- Add Raghad's route test end
 
 Route::get('/dashboard', function () {
     return view('dashboard');
